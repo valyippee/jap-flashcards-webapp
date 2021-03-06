@@ -1,7 +1,7 @@
-package com.example.demo;
+package com.harukoma;
 
-import com.example.demo.domain.Card;
-import com.example.demo.repositories.CardRepository;
+import com.harukoma.domain.Card;
+import com.harukoma.repositories.CardRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

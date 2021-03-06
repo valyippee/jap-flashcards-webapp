@@ -1,8 +1,8 @@
-package com.example.demo.controllers;
+package com.harukoma.controllers;
 
 
-import com.example.demo.domain.Card;
-import com.example.demo.repositories.CardRepository;
+import com.harukoma.domain.Card;
+import com.harukoma.repositories.CardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
-package com.example.demo.repositories;
+package com.harukoma.repositories;
 
-import com.example.demo.domain.Card;
+import com.harukoma.domain.Card;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,10 +1,10 @@
-package com.valerie.demo;
+package com.harukoma;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class HarukomaApplicationTests {
 
 	@Test
 	void contextLoads() {

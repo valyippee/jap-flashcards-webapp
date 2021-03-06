@@ -1,6 +1,6 @@
-package com.valerie.demo.repositories;
+package com.harukoma.repositories;
 
-import com.valerie.demo.domain.Set;
+import com.harukoma.domain.Set;
 import org.springframework.data.repository.CrudRepository;
 
 public interface SetRepository  extends CrudRepository<Set, Long> {

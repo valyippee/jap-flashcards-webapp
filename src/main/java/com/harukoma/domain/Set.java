@@ -1,4 +1,4 @@
-package com.valerie.demo.domain;
+package com.harukoma.domain;
 
 import javax.persistence.Entity;
 
