@@ -1,7 +1,9 @@
 package com.harukoma;
 
 import com.harukoma.domain.Card;
+import com.harukoma.domain.Set;
 import com.harukoma.repositories.CardRepository;
+import com.harukoma.repositories.SetRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -9,9 +11,11 @@ import org.springframework.stereotype.Component;
 public class BootStrap implements CommandLineRunner {
 
     private final CardRepository cardRepository;
+    private final SetRepository setRepository;
 
-    public BootStrap(CardRepository cardRepository) {
+    public BootStrap(CardRepository cardRepository, SetRepository setRepository) {
         this.cardRepository = cardRepository;
+        this.setRepository = setRepository;
     }
 
     @Override
@@ -24,6 +28,14 @@ public class BootStrap implements CommandLineRunner {
         cardRepository.save(cat);
         cardRepository.save(panda);
         cardRepository.save(fish);
+
+        Set animals = new Set((long) 1, "animals", "a set of animals");
+        animals.addCard(cat);
+        animals.addCard(panda);
+        animals.addCard(fish);
+
+        setRepository.save(animals);
+
     }
 
 
