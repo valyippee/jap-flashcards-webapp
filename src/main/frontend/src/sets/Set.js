@@ -4,18 +4,19 @@ import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import CardSummary from "./CardSummary";
 import Edit from "./Edit";
 import "./Set.css";
+import SetSummary from "./SetSummary";
 
 export default function Set() {
 
-    const [cards, setCards] = useState([]);
+    const [info, setInfo] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     const fetchCards = () => {
         if (isLoading) {
             console.log("FETCHING DATA!");
             axios.get("http://localhost:8080/set").then(res => {
-                setCards(res.data);
-                if (cards) {setIsLoading(false);}
+                setInfo(res.data);
+                setIsLoading(false)
             }).catch(err => console.log(err));
         }
 
@@ -25,19 +26,17 @@ export default function Set() {
         fetchCards();
     })
 
-    console.log(cards);
+    console.log(info);
+
+    if (isLoading) {
+        return <div>loading...</div>
+    }
 
     return (
         <div className="setLayout">
-            <CardSummary cards={cards}/>
-            <div className="edit">
-                <BrowserRouter>
-                    <Link to="/edit"><button className="editButton">EDIT</button></Link>
-                    <Switch>
-                        <Route exact path="/edit" render={() => <Edit />} />
-                    </Switch>
-                </BrowserRouter>
-            </div>
+            <SetSummary name={info.name} description={info.description}/>
+            <CardSummary cards={info.cards}/>
+
         </div>
 
     )
