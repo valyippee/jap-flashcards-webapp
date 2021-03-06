@@ -1,0 +1,9 @@
+.titleInput, .descriptionInput {
+    resize: none;
+    height: 50px;
+    width: 100px;
+}
+
+.setDetails {
+    display: flex;
+}

@@ -1,0 +1,41 @@
+.summary {
+    display: inline-block;
+}
+
+.card {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.section {
+    font-family: "Roboto Light";
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.field, .title {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+    width: 140px;
+    padding: 10px;
+    resize: none;
+    color: black;
+}
+
+.title {
+    margin-left: 10px;
+    border: white;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Roboto Light";
+}
+
+.titleSection {
+    display: flex;
+
+}

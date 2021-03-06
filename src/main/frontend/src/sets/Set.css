@@ -1,0 +1,26 @@
+.editButton {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    float: top;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.edit {
+    display: inline-block;
+    padding-left: 60px;
+    padding-top: 100px;
+    float: top;
+
+}
+
+.setLayout {
+    display: flex;
+    padding: 20px;
+}
