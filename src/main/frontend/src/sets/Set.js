@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import CardSummary from "./CardSummary";
-import Edit from "./Edit";
 import "./Set.css";
 import SetSummary from "./SetSummary";
 
@@ -34,7 +33,9 @@ export default function Set() {
 
     return (
         <div className="setLayout">
-            <SetSummary name={info.name} description={info.description}/>
+            <div className="setSummary">
+                <SetSummary name={info.name} description={info.description}/>
+            </div>
             <CardSummary cards={info.cards}/>
 
         </div>

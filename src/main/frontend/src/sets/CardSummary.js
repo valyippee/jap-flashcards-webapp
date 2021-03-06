@@ -8,11 +8,10 @@ import {BrowserRouter, Link, Route, Switch} from "react-router-dom";
 export default function CardSummary(props) {
     return (
         <div className="summary">
-            <span className="section">Flashcards Summary</span>
             <div className="titleSection">
-                <Field className={"title"} value={"JAPANESE"}/>
-                <Field className={"title"} value={"FURIGANA"}/>
-                <Field className={"title"} value={"MEANING"}/>
+                <Field className="title" value={"JAPANESE"}/>
+                <Field className="title" value={"FURIGANA"}/>
+                <Field className="title" value={"MEANING"}/>
                 <div className="edit">
                     <BrowserRouter>
                         <Link to="/edit"><button className="editButton">EDIT</button></Link>

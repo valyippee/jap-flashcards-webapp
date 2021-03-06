@@ -1,0 +1,59 @@
+.setTitle {
+    font-size: 25px;
+}
+
+.setDescription {
+    font-size: 16px;
+}
+
+.setSummaryLayout {
+    font-family: "Roboto Light";
+    display: inline-flex;
+}
+
+.setMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.setTitle, .setDescription {
+    resize: none;
+    background-color: white;
+    border-width: 2px;
+    border-color: white;
+    font-family: "Roboto Light";
+}
+
+.setOthers {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    position: fixed;
+    left: 450px;
+}
+
+ul li a {
+
+}
+
+.tabs {
+    display: inline-flex;
+}
+
+.summaryTab {
+    padding: 10px 40px 10px 50px;
+    font-family: "Roboto Light";
+    color: black;
+    text-decoration: none;
+}
+
+.memoTab {
+    padding: 10px;
+    font-family: "Roboto Light";
+
+}
+
+.summaryLink, .memoLink {
+    color: black;
+    text-decoration: none;
+}
